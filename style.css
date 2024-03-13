@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Segunda receita de bolo para calcular os px em rem*/
+/*REM = Root EM(unidade de medida rem)*/
+:root{
+    font-size: 62.5%; /*deixando o padrão do REM para 10px ao invés de 16px */
+}
+
+body{
+    background:  #ECE9FD;
+    padding: 6.0rem 2.3rem 6.6rem; /*1cima 2esquerda 3baixo 4direita (ordem do padding por vez)*/
+    font-size: 1.6rem;
+    font-family: 'Epilogue';
+}
+
+main{
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    font-weight: 800;
+    color: #090039;
+    margin-bottom: 1.5rem;
+}
+
+/*Atacando o primeiro P do main*/
+main p:first-child{
+    color: #7158EF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    margin-bottom: 1.7rem;
+}
+
+h1 + p{
+    color: rgba(10, 0, 57, 0.64);
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+a{
+    color: #090039;
+    text-decoration: none; /*retirando o sublinhado do link*/
+}
+
+a:hover{
+    color: #5c42ed;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;/*retirando as bolinhas da lista*/
+    margin-top: 7.2rem;
+}
+
+ul li{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    width: 25.7rem;
+    display: flex;
+    gap: 3.8rem;
+}
+
+ul li span{
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+    color: #090039;
+}
+
+/*media queries*/
+@media(min-width:300px)
